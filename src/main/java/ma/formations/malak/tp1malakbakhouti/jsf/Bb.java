@@ -47,6 +47,9 @@ public class Bb implements Serializable {
      * Dernière réponse de l'API OpenAI.
      */
     private String reponse;
+    private boolean debug;
+    private String texteRequeteJson;
+    private String texteReponseJson;
     /**
      * La conversation depuis le début.
      */
@@ -102,7 +105,29 @@ public class Bb implements Serializable {
     public void setReponse(String reponse) {
         this.reponse = reponse;
     }
+    public boolean isDebug() {
+        return debug;
+    }
 
+    public void setDebug(boolean debug) {
+        this.debug = debug;
+    }
+
+    public String getTexteRequeteJson() {
+        return texteRequeteJson;
+    }
+
+    public void setTexteRequeteJson(String texteRequeteJson) {
+        this.texteRequeteJson = texteRequeteJson;
+    }
+
+    public String getTexteReponseJson() {
+        return texteReponseJson;
+    }
+
+    public void setTexteReponseJson(String texteReponseJson) {
+        this.texteReponseJson = texteReponseJson;
+    }
     public String getConversation() {
         return conversation.toString();
     }
