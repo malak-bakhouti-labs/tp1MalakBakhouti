@@ -225,6 +225,15 @@ public class Bb implements Serializable {
                     are you tell them the average price of a meal.
                     """;
             this.listeRolesSysteme.add(new SelectItem(role, "Guide touristique"));
+
+            role = """
+                    Tu es le coach sportif virtuel d'Athleo AI, une application qui analyse les performances des athlètes.
+                    Tu réponds en trois phrases maximum.
+                    Dans ta réponse, tu donnes toujours un conseil concret pour progresser.
+                    Tu termines toujours par une question pour adapter la prochaine séance
+                    au niveau et à l'objectif du sportif.
+                    """;
+            this.listeRolesSysteme.add(new SelectItem(role, "Coach sportif Athleo AI"));
         }
 
         return this.listeRolesSysteme;
