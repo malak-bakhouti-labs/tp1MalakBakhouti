@@ -10,11 +10,11 @@ public class HelloServlet extends HttpServlet {
     private String message;
 
     public void init() {
-        message = "Hello World!";
+        message = "Bienvenue dans mon TP1 : accès direct à l'API de Gemini !";
     }
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        response.setContentType("text/html");
+        response.setContentType("text/html;charset=UTF-8");
 
         // Hello
         PrintWriter out = response.getWriter();
